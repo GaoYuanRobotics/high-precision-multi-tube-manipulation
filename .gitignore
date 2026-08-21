@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 本机编辑器 / Codex 工作区文件，不放进公开 GitHub 仓库。
+.vscode/
+.codex/
+.agents/
+
+# 训练权重和模型导出文件通常很大；公开仓库只保留代码、数据、标注和结果图。
+*.pt
+*.pth
+*.onnx
+*.engine
+*.torchscript
+runs/**/weights/

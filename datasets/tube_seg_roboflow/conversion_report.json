@@ -1,0 +1,58 @@
+{
+  "source_annotation": "/home/gaoyuan/下载/New HPS.v2-new-version.coco-segmentation/train/_annotations.coco.json",
+  "output_dir": "/home/gaoyuan/high-precision-segmentation/datasets/tube_seg_roboflow",
+  "classes": [
+    "p-body",
+    "p-cap",
+    "y-body",
+    "y-cap"
+  ],
+  "ignored_empty_categories": [
+    "New-HPS"
+  ],
+  "seed": 42,
+  "val_ratio": 0.2,
+  "stats": {
+    "images": 90,
+    "annotations": 358,
+    "labels_written": 358,
+    "source_groups": 9,
+    "train_groups": 7,
+    "val_groups": 2,
+    "train_images": 70,
+    "val_images": 20,
+    "train_labels": 278,
+    "val_labels": 80
+  },
+  "splits": {
+    "train": {
+      "source_groups": [
+        "frame_000000.jpg",
+        "frame_000001.jpg",
+        "frame_000002.jpg",
+        "frame_000004.jpg",
+        "frame_000005.jpg",
+        "frame_000007.jpg",
+        "frame_000008.jpg"
+      ],
+      "class_counts": {
+        "0": 70,
+        "1": 70,
+        "2": 70,
+        "3": 68
+      }
+    },
+    "val": {
+      "source_groups": [
+        "frame_000003.jpg",
+        "frame_000006.jpg"
+      ],
+      "class_counts": {
+        "0": 20,
+        "1": 20,
+        "2": 20,
+        "3": 20
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# YOLO/GPU 环境：与脚本01固定契约及当前 hps 环境一致。
+# 带 +cu130 的 PyTorch wheel 需要使用 PyTorch CUDA 13.0 软件源。
+--extra-index-url https://download.pytorch.org/whl/cu130
+torch==2.12.0+cu130
+torchvision==0.27.0+cu130
+ultralytics==8.4.56
+

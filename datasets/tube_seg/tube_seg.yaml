@@ -1,0 +1,9 @@
+path: /home/gaoyuan/high-precision-segmentation/datasets/tube_seg
+train: images/train
+val: images/val
+nc: 4
+names:
+  0: p-body
+  1: p-cap
+  2: y-body
+  3: y-cap

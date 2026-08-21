@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "high-precision-segmentation"
+version = "0.1.0"
+description = "YOLO26 segmentation and CArm pick-place pipeline for tube insertion."
+requires-python = ">=3.10"
+dependencies = [
+    "opencv-python",
+    "numpy",
+    "scipy",
+    "pyyaml",
+    "tqdm",
+    "pyrealsense2",
+    "carm==0.1.20260512",
+]
+
+[project.optional-dependencies]
+yolo = [
+    "ultralytics==8.4.56",
+]
+
+[tool.setuptools]
+# 当前工程采用可直接运行的编号脚本，不再安装 src-layout Python 包。
+py-modules = []
